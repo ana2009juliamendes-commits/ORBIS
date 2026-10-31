@@ -1,0 +1,253 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b18">
+  <meta name="description" content="ORBIS — Uma plataforma para explorar possibilidades e construir caminhos.">
+  <title>ORBIS | Central de possibilidades</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="app-shell">
+
+    <aside class="sidebar" id="sidebar">
+      <a class="logo" href="#inicio">ORBIS<span>.</span></a>
+      <p class="sidebar-label">ESPAÇO DE EXPLORAÇÃO</p>
+
+      <nav class="side-nav" aria-label="Navegação principal">
+        <button class="nav-item active" data-view="inicio">
+          <span>⌂</span> Visão geral
+        </button>
+        <button class="nav-item" data-view="autoconhecimento">
+          <span>✧</span> Autoconhecimento
+        </button>
+        <button class="nav-item" data-view="explorador">
+          <span>◎</span> Explorador de áreas
+        </button>
+        <button class="nav-item" data-view="comparador">
+          <span>⇄</span> Comparador
+        </button>
+        <button class="nav-item" data-view="jornada">
+          <span>⌁</span> Minha jornada
+        </button>
+        <button class="nav-item" data-view="biblioteca">
+          <span>▤</span> Biblioteca
+        </button>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <div class="sidebar-status">
+          <span class="status-dot"></span>
+          <div>
+            <strong>ORBIS online</strong>
+            <small>Seu espaço de descobertas</small>
+          </div>
+        </div>
+        <span class="sidebar-version">ORBITAL SYSTEM · 2026</span>
+      </div>
+    </aside>
+
+    <div class="main-area">
+      <header class="topbar">
+        <button class="mobile-menu" id="mobile-menu" aria-label="Abrir menu">☰</button>
+        <div class="breadcrumb">ORBIS <span>/</span> <strong id="page-name">Visão geral</strong></div>
+        <div class="topbar-right">
+          <span class="system-indicator"><i></i> SISTEMA ATIVO</span>
+          <div class="user-avatar" aria-label="Perfil">O</div>
+        </div>
+      </header>
+
+      <main class="workspace">
+
+        <!-- VISÃO GERAL -->
+        <section class="view active" id="view-inicio">
+          <div class="welcome-row">
+            <div>
+              <span class="eyebrow">CENTRAL DE COMANDO / 01</span>
+              <h1>Seu universo de <span>possibilidades.</span></h1>
+              <p class="view-description">Um espaço para descobrir interesses, explorar caminhos e transformar ideias em próximos passos.</p>
+            </div>
+            <div class="date-card">
+              <span>SEU ESPAÇO</span>
+              <strong>ORBIS</strong>
+              <small>Exploração em andamento</small>
+            </div>
+          </div>
+
+          <div class="dashboard-banner">
+            <div>
+              <span class="eyebrow">✦ UMA NOVA DESCOBERTA COMEÇA AQUI</span>
+              <h2>O próximo passo não precisa estar definido.</h2>
+              <p>Comece explorando. Conheça possibilidades e descubra o que faz sentido para você.</p>
+              <button class="primary-button" data-go="autoconhecimento">Iniciar descoberta ↗</button>
+            </div>
+            <div class="banner-orbit"><span>O</span></div>
+          </div>
+
+          <div class="section-title-row">
+            <div>
+              <span class="eyebrow">SEU PAINEL</span>
+              <h2>Portais de exploração</h2>
+            </div>
+            <span class="subtle-label">06 MÓDULOS</span>
+          </div>
+
+          <div class="portal-grid">
+            <button class="portal-card" data-go="autoconhecimento">
+              <span class="portal-icon">✧</span>
+              <span class="portal-tag">01 / DESCOBERTA</span>
+              <strong>Autoconhecimento</strong>
+              <small>Explore interesses, preferências e habilidades.</small>
+              <span class="portal-link">Abrir módulo ↗</span>
+            </button>
+
+            <button class="portal-card" data-go="explorador">
+              <span class="portal-icon">◎</span>
+              <span class="portal-tag">02 / CONHECIMENTO</span>
+              <strong>Explorador de áreas</strong>
+              <small>Conheça campos de estudo e possibilidades profissionais.</small>
+              <span class="portal-link">Abrir módulo ↗</span>
+            </button>
+
+            <button class="portal-card" data-go="comparador">
+              <span class="portal-icon">⇄</span>
+              <span class="portal-tag">03 / ANÁLISE</span>
+              <strong>Comparador</strong>
+              <small>Organize informações e compare alternativas.</small>
+              <span class="portal-link">Abrir módulo ↗</span>
+            </button>
+
+            <button class="portal-card" data-go="jornada">
+              <span class="portal-icon">⌁</span>
+              <span class="portal-tag">04 / PLANEJAMENTO</span>
+              <strong>Minha jornada</strong>
+              <small>Crie objetivos e organize seus próximos passos.</small>
+              <span class="portal-link">Abrir módulo ↗</span>
+            </button>
+
+            <button class="portal-card" data-go="biblioteca">
+              <span class="portal-icon">▤</span>
+              <span class="portal-tag">05 / APRENDIZADO</span>
+              <strong>Biblioteca ORBIS</strong>
+              <small>Encontre conteúdos para ampliar seus horizontes.</small>
+              <span class="portal-link">Abrir módulo ↗</span>
+            </button>
+
+            <button class="portal-card portal-card-special" data-go="explorador">
+              <span class="portal-icon">✦</span>
+              <span class="portal-tag">06 / POSSIBILIDADES</span>
+              <strong>Novos horizontes</strong>
+              <small>Descubra assuntos e caminhos que você ainda não conhece.</small>
+              <span class="portal-link">Começar a explorar ↗</span>
+            </button>
+          </div>
+
+          <div class="dashboard-bottom">
+            <div class="info-panel">
+              <span class="eyebrow">PONTO DE PARTIDA</span>
+              <h3>Não existe uma única trajetória.</h3>
+              <p>Seus interesses podem mudar, novas oportunidades podem surgir e seus planos podem evoluir. Explore com curiosidade e tome decisões com informação.</p>
+            </div>
+            <div class="info-panel">
+              <span class="eyebrow">DICA ORBIS</span>
+              <h3>Conheça antes de escolher.</h3>
+              <p>Pesquise áreas, converse com pessoas, conheça cursos e procure experiências que ajudem a entender cada possibilidade.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- AUTOCONHECIMENTO -->
+        <section class="view" id="view-autoconhecimento">
+          <span class="eyebrow">MÓDULO 01 / DESCOBERTA</span>
+          <h1>Autoconhecimento <span>em expansão.</span></h1>
+          <p class="view-description">Investigue seus interesses e reconheça assuntos que despertam sua curiosidade.</p>
+          <div class="module-intro">
+            <span class="module-symbol">✧</span>
+            <h2>Conhecer suas preferências é um ponto de partida.</h2>
+            <p>Este módulo terá atividades interativas para refletir sobre interesses, habilidades e formas de aprender. Os resultados serão sugestões de exploração, não rótulos ou decisões definitivas.</p>
+            <button class="primary-button" data-action="quiz">Começar questionário ↗</button>
+          </div>
+          <div id="quiz-area" class="interactive-area" hidden></div>
+        </section>
+
+        <!-- EXPLORADOR -->
+        <section class="view" id="view-explorador">
+          <span class="eyebrow">MÓDULO 02 / CONHECIMENTO</span>
+          <h1>Explorador de <span>áreas.</span></h1>
+          <p class="view-description">Conheça diferentes campos de estudo, suas perguntas e possibilidades.</p>
+          <div class="category-grid">
+            <article class="category-card"><span>⌘</span><h3>Tecnologia</h3><p>Computação, programação, inteligência artificial, segurança digital e sistemas.</p></article>
+            <article class="category-card"><span>♡</span><h3>Saúde e vida</h3><p>Medicina, enfermagem, biologia, psicologia, pesquisa e cuidado.</p></article>
+            <article class="category-card"><span>⌬</span><h3>Engenharia</h3><p>Projetos, infraestrutura, energia, materiais, máquinas e inovação.</p></article>
+            <article class="category-card"><span>✎</span><h3>Artes e comunicação</h3><p>Design, audiovisual, escrita, publicidade, música e expressão.</p></article>
+            <article class="category-card"><span>⌁</span><h3>Sociedade e humanas</h3><p>História, direito, educação, sociologia, política e cultura.</p></article>
+            <article class="category-card"><span>◈</span><h3>Negócios e gestão</h3><p>Administração, economia, empreendedorismo, finanças e estratégia.</p></article>
+            <article class="category-card"><span>⌖</span><h3>Ciências e ambiente</h3><p>Química, física, matemática, ecologia, clima e investigação científica.</p></article>
+            <article class="category-card"><span>✦</span><h3>Explorações interdisciplinares</h3><p>Áreas que combinam conhecimentos e perspectivas diferentes.</p></article>
+          </div>
+        </section>
+
+        <!-- COMPARADOR -->
+        <section class="view" id="view-comparador">
+          <span class="eyebrow">MÓDULO 03 / ANÁLISE</span>
+          <h1>Compare <span>possibilidades.</span></h1>
+          <p class="view-description">Organize suas pesquisas e observe diferenças entre caminhos acadêmicos e profissionais.</p>
+          <div class="module-intro">
+            <span class="module-symbol">⇄</span>
+            <h2>Uma escolha informada começa com boas perguntas.</h2>
+            <p>Na próxima etapa, você poderá adicionar opções e comparar critérios como formação, áreas de atuação, rotina, interesses e requisitos. As informações precisarão ser verificadas em fontes confiáveis.</p>
+          </div>
+          <div class="comparison-placeholder">
+            <strong>Seu espaço de comparação</strong>
+            <p>Seu comparador interativo será desenvolvido aqui.</p>
+          </div>
+        </section>
+
+        <!-- JORNADA -->
+        <section class="view" id="view-jornada">
+          <span class="eyebrow">MÓDULO 04 / PLANEJAMENTO</span>
+          <h1>Minha <span>jornada.</span></h1>
+          <p class="view-description">Transforme descobertas em objetivos e organize seus próximos passos.</p>
+          <div class="module-intro">
+            <span class="module-symbol">⌁</span>
+            <h2>Seu caminho pode ser construído aos poucos.</h2>
+            <p>Planeje pequenas ações, registre o que deseja investigar e revise suas prioridades conforme aprende coisas novas.</p>
+          </div>
+          <div class="goal-form">
+            <label for="goal-input">Uma descoberta ou objetivo que deseja registrar</label>
+            <div class="goal-input-row">
+              <input id="goal-input" type="text" placeholder="Ex.: Pesquisar cursos de design">
+              <button class="primary-button" id="add-goal">Adicionar</button>
+            </div>
+            <div id="goal-list" class="goal-list"></div>
+          </div>
+        </section>
+
+        <!-- BIBLIOTECA -->
+        <section class="view" id="view-biblioteca">
+          <span class="eyebrow">MÓDULO 05 / APRENDIZADO</span>
+          <h1>Biblioteca <span>ORBIS.</span></h1>
+          <p class="view-description">Um espaço para organizar conhecimentos e ampliar sua visão sobre o mundo.</p>
+          <div class="library-grid">
+            <article class="library-card"><span>01</span><h3>Formação acadêmica</h3><p>Entenda cursos, modalidades de ensino e caminhos de ingresso.</p></article>
+            <article class="library-card"><span>02</span><h3>Competências</h3><p>Explore conhecimentos, habilidades técnicas e competências humanas.</p></article>
+            <article class="library-card"><span>03</span><h3>Mundo do trabalho</h3><p>Investigue ocupações, ambientes profissionais e mudanças no trabalho.</p></article>
+            <article class="library-card"><span>04</span><h3>Pesquisa e informação</h3><p>Aprenda a avaliar fontes, comparar informações e pesquisar oportunidades.</p></article>
+          </div>
+        </section>
+
+      </main>
+
+      <footer class="app-footer">
+        <span>ORBIS © 2026</span>
+        <span>Explore possibilidades. Construa caminhos.</span>
+      </footer>
+    </div>
+  </div>
+
+  <script src="Script.js"></script>
+</body>
+</html>
