@@ -1,24 +1,49 @@
 
+// ===================================
 // ORBIS - Sistema de interação
+// ===================================
 
-// Seleciona o botão principal
+// Elementos principais
 const startButton = document.getElementById("startButton");
-
-// Seleciona a seção de exploração
 const exploreSection = document.getElementById("explorar");
 
-// Ação do botão
-startButton.addEventListener("click", function() {
+// Botão principal
+if (startButton && exploreSection) {
 
-    alert("Bem-vindo ao ORBIS! Seu futuro começa com novas possibilidades.");
+    startButton.addEventListener("click", function() {
 
-    exploreSection.scrollIntoView({
-        behavior: "smooth"
+        exploreSection.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+
     });
 
+}
+
+// Animação de entrada das seções
+const sections = document.querySelectorAll("#sobre, #explorar");
+
+const observer = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+        if (entry.isIntersecting) {
+
+            entry.target.classList.add("visible");
+
+        }
+
+    });
+
+}, {
+    threshold: 0.15
 });
 
+sections.forEach(section => {
+    observer.observe(section);
+});
 
-// Mensagem no console
+// Inicialização
 console.log("ORBIS iniciado com sucesso!");
 console.log("Explore possibilidades. Construa seu caminho.");
