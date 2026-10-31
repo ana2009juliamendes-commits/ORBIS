@@ -1,4 +1,6 @@
 
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -10,109 +12,250 @@ html {
 }
 
 body {
-    background: #0B0A12;
+    background: #090811;
     color: #F5F2FC;
-    font-family: Arial, sans-serif;
+    font-family: 'DM Sans', sans-serif;
+    overflow-x: hidden;
 }
 
+/* HEADER */
+
 header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 8%;
-    border-bottom: 1px solid #302943;
+    padding: 24px 8%;
+    background: rgba(9, 8, 17, 0.88);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(174, 145, 255, 0.12);
 }
 
 header h1 {
-    font-size: 30px;
-    letter-spacing: 3px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 32px;
+    letter-spacing: 4px;
 }
 
 header h1 span {
-    color: #9271E8;
+    color: #A17CF5;
 }
 
 nav {
     display: flex;
-    gap: 30px;
+    gap: 38px;
 }
 
 nav a {
-    color: #C1C1CD;
+    color: #AAA5B8;
     text-decoration: none;
+    font-size: 14px;
     transition: 0.3s;
 }
 
 nav a:hover {
-    color: #C7B6F2;
+    color: #B99AFF;
 }
 
+/* HERO */
+
 .hero {
-    min-height: 75vh;
+    min-height: 90vh;
+    position: relative;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 80px 20px;
+    padding: 120px 20px;
+    background:
+        radial-gradient(ellipse at 50% 40%,
+        rgba(120, 78, 210, 0.18),
+        transparent 55%),
+        linear-gradient(180deg, #0D0A19, #090811);
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border: 1px solid rgba(164, 126, 255, 0.12);
+    border-radius: 50%;
+    box-shadow:
+        0 0 100px rgba(145, 104, 245, 0.12),
+        inset 0 0 100px rgba(145, 104, 245, 0.08);
+    pointer-events: none;
 }
 
 .subtitle {
-    color: #9271E8;
-    letter-spacing: 4px;
+    color: #A889F5;
+    letter-spacing: 6px;
     font-size: 12px;
-    margin-bottom: 25px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    z-index: 1;
 }
 
 .hero h2 {
-    font-size: clamp(35px, 6vw, 65px);
-    max-width: 850px;
-    line-height: 1.2;
-    margin-bottom: 25px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(42px, 6vw, 76px);
+    max-width: 950px;
+    line-height: 1.12;
+    margin-bottom: 30px;
+    z-index: 1;
 }
 
 .hero h2 span {
     display: block;
-    color: #B49AEF;
+    background: linear-gradient(90deg, #9B78EE, #D0B9FF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .description {
     color: #AAA5B8;
     font-size: 18px;
-    line-height: 1.7;
-    max-width: 550px;
+    line-height: 1.9;
+    max-width: 600px;
+    z-index: 1;
 }
 
+/* BOTÃO */
+
 button {
-    margin-top: 35px;
-    padding: 17px 30px;
-    background: #9271E8;
+    margin-top: 40px;
+    padding: 19px 38px;
+    background: linear-gradient(135deg, #9470E8, #7451C8);
     color: white;
-    border: none;
-    border-radius: 6px;
-    font-weight: bold;
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
     cursor: pointer;
-    transition: 0.3s;
+    box-shadow: 0 10px 40px rgba(126, 85, 220, 0.25);
+    transition: 0.35s;
+    z-index: 1;
 }
 
 button:hover {
-    background: #B49AEF;
-    transform: translateY(-3px);
+    transform: translateY(-5px);
+    box-shadow: 0 15px 45px rgba(145, 104, 245, 0.4);
+}
+
+/* SEÇÕES */
+
+#sobre,
+#explorar {
+    padding: 120px 12%;
+    text-align: center;
+    position: relative;
 }
 
 #sobre {
-    padding: 80px 10%;
-    text-align: center;
-    background: #151220;
+    background: linear-gradient(180deg, #100D1B, #151020);
+    border-top: 1px solid rgba(174, 145, 255, 0.12);
+    border-bottom: 1px solid rgba(174, 145, 255, 0.12);
 }
 
-#sobre h2 {
+#explorar {
+    background:
+        radial-gradient(ellipse at 50% 50%,
+        rgba(125, 83, 210, 0.13),
+        transparent 65%),
+        #090811;
+}
+
+#sobre h2,
+#explorar h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(30px, 4vw, 46px);
     color: #C7B6F2;
-    font-size: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
-#sobre p {
+#sobre p,
+#explorar p {
     color: #AAA5B8;
-    line-height: 1.7;
-} 
+    font-size: 17px;
+    line-height: 2;
+    max-width: 700px;
+    margin: auto;
+}
+
+/* SELEÇÃO DE TEXTO */
+
+::selection {
+    background: #9271E8;
+    color: white;
+}
+
+/* ROLAGEM */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #090811;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #62449C;
+    border-radius: 10px;
+}
+
+/* CELULAR */
+
+@media (max-width: 700px) {
+
+    header {
+        padding: 20px 6%;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    nav {
+        gap: 18px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .hero {
+        min-height: 85vh;
+        padding: 90px 22px;
+    }
+
+    .hero::before {
+        width: 300px;
+        height: 300px;
+    }
+
+    .subtitle {
+        font-size: 10px;
+        letter-spacing: 3px;
+    }
+
+    .hero h2 {
+        font-size: 43px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    #sobre,
+    #explorar {
+        padding: 85px 8%;
+    }
+}
