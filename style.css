@@ -1,1 +1,118 @@
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #0B0A12;
+    color: #F5F2FC;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+    border-bottom: 1px solid #302943;
+}
+
+header h1 {
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+header h1 span {
+    color: #9271E8;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #C1C1CD;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #C7B6F2;
+}
+
+.hero {
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.subtitle {
+    color: #9271E8;
+    letter-spacing: 4px;
+    font-size: 12px;
+    margin-bottom: 25px;
+}
+
+.hero h2 {
+    font-size: clamp(35px, 6vw, 65px);
+    max-width: 850px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.hero h2 span {
+    display: block;
+    color: #B49AEF;
+}
+
+.description {
+    color: #AAA5B8;
+    font-size: 18px;
+    line-height: 1.7;
+    max-width: 550px;
+}
+
+button {
+    margin-top: 35px;
+    padding: 17px 30px;
+    background: #9271E8;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #B49AEF;
+    transform: translateY(-3px);
+}
+
+#sobre {
+    padding: 80px 10%;
+    text-align: center;
+    background: #151220;
+}
+
+#sobre h2 {
+    color: #C7B6F2;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#sobre p {
+    color: #AAA5B8;
+    line-height: 1.7;
+} 
